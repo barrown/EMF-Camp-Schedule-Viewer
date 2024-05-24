@@ -2,6 +2,7 @@
 gantt
     title Full EMF Camp Schedule
     dateFormat YYYY-MM-DD HH:mm
+    axisFormat %a %H:%M
     section Thursday
       Drop in LAN Party @ EEH  :done, 2024-05-30 10:00, 300m
       Finger Knitting for Kids - intro drop-in session  :done, 2024-05-30 14:30, 60m

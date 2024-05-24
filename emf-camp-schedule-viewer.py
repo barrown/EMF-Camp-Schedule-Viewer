@@ -37,7 +37,7 @@ for index in range(len(emftalks)):
 
 
 with open("readme.md", "w") as fname:
-    fname.write("```mermaid\ngantt\n    title Your EMF Camp Schedule\n    dateFormat YYYY-MM-DD HH:mm\n") # mermaid preamble
+    fname.write("```mermaid\ngantt\n    title Your EMF Camp Schedule\n    dateFormat YYYY-MM-DD HH:mm\n    axisFormat %a %H:%M\n") # mermaid preamble
     sections = [] # we give each day its own section
     for key in sorted(scheduledict):
         if scheduledict[key]["day"] not in sections:
