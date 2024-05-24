@@ -1,10 +1,8 @@
-# EMF Camp Schedule Viewer
-Once you have got your link to your favourite talks/workshops from [EMF 2024 Line-up](https://www.emfcamp.org/schedule/2024), clone/fork this repo, modify the code, and run it to generate your personal gantt chart. Github uses [Mermaid.js](http://mermaid.js.org/syntax/gantt.html) to render the code block, so you can visualise the output by committing the repo back to github.
-
 ```mermaid
 gantt
     title Your EMF Camp Schedule
     dateFormat YYYY-MM-DD HH:mm
+    axisFormat %a %H:%M
     section Friday
       Opening Ceremony  :crit, 2024-05-31 10:00, 30m
       How to go solar off grid in the UK.   :2024-05-31 11:00, 30m
@@ -17,7 +15,10 @@ gantt
       Engineering lessons from a 300 year-old poem    :active, 2024-05-31 16:50, 30m
       The Auto Plane Spotter  :2024-05-31 18:10, 30m
       Is everything difficult, or is it just me?  :crit, 2024-05-31 18:40, 40m
+      Hackers Introduction with Iain Softley  :2024-05-31 20:30, 20m
+      Hackers - Special Event  :2024-05-31 20:50, 105m
     section Saturday
+      Lockpicking  :done, 2024-06-01 10:30, 90m
       How to Save a Life  :2024-06-01 10:40, 30m
       Gas boilers suck! Hack yours today, save money, save the planet!   :crit, 2024-06-01 11:20, 30m
       OMG WTF SSO  :2024-06-01 11:50, 30m
@@ -30,11 +31,13 @@ gantt
       A Brief History of Calendar Systems and Movable Feasts  :active, 2024-06-01 16:50, 30m
       Data is plural  :2024-06-01 17:00, 20m
       I Hacked Into My Own Car and other stories  :crit, 2024-06-01 17:50, 30m
+      An Evening of Unnecessary Detail  :crit, 2024-06-01 19:30, 60m
+      Funki Porcini - The Laserium  :done, 2024-06-01 23:00, 60m
     section Sunday
       I FOI'd every NHS board in England on autism assessment provision  :active, 2024-06-02 10:40, 20m
       Making sense of London Underground's timetables and real-time data  :active, 2024-06-02 11:10, 30m
       Titanium Spork Workshop  :done, 2024-06-02 12:00, 180m
-      An engineerâ€™s guide to parenthood  :2024-06-02 12:20, 30m
+      An engineer’s guide to parenthood  :2024-06-02 12:20, 30m
       Never Settle Down  :active, 2024-06-02 13:50, 30m
       Steaming into Sustainability  :2024-06-02 14:50, 30m
       Driving fancy LED panels with commodity hardware  :crit, 2024-06-02 15:00, 30m
