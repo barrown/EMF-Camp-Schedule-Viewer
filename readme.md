@@ -1,3 +1,6 @@
+# EMF Camp Schedule Viewer
+Once you have got your link to your favourite talks/workshops from [EMF 2024 Line-up](https://www.emfcamp.org/schedule/2024), clone/fork this repo, modify the code, and run it to generate your personal gantt chart. Github uses [Mermaid.js](http://mermaid.js.org/syntax/gantt.html) to render the code block, so you can visualise the output by committing the repo back to github.
+
 ```mermaid
 gantt
     title Your EMF Camp Schedule
@@ -31,7 +34,7 @@ gantt
       I FOI'd every NHS board in England on autism assessment provision  :active, 2024-06-02 10:40, 20m
       Making sense of London Underground's timetables and real-time data  :active, 2024-06-02 11:10, 30m
       Titanium Spork Workshop  :done, 2024-06-02 12:00, 180m
-      An engineer’s guide to parenthood  :2024-06-02 12:20, 30m
+      An engineerâ€™s guide to parenthood  :2024-06-02 12:20, 30m
       Never Settle Down  :active, 2024-06-02 13:50, 30m
       Steaming into Sustainability  :2024-06-02 14:50, 30m
       Driving fancy LED panels with commodity hardware  :crit, 2024-06-02 15:00, 30m
