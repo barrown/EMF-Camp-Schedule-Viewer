@@ -58,13 +58,22 @@ with open("readme.md", "w") as fname:
 
 # magic date for the start of 2024 EMF Camp
 previouskey = datetime(2024, 5, 31, 10, 0)
-
+previousvenue = "Stage A"
 # print out a more informative schedule for you
 for key in sorted(scheduledict):
-    print("Time to next talk:", key - previouskey)
+    ttnt = (key - previouskey - duration).seconds
+    if ttnt > 1000*60:
+        print("There is a clash with the next talk")
+    else:
+        print(f"Time to next talk: {ttnt/60:.0f}m")
+    if scheduledict[key]["venue"] != previousvenue:
+        print("You need to walk to",scheduledict[key]["venue"])
+    else:
+        print("Stay where you are.")
     print("\n")
     print(scheduledict[key]["title"])
     print("by",scheduledict[key]["speaker"])
     print(scheduledict[key]["venue"],"on",scheduledict[key]["daytime"],"for",scheduledict[key]["duration"],"mins")
     print(scheduledict[key]["description"])
     previouskey = key
+    previousvenue = scheduledict[key]["venue"]
