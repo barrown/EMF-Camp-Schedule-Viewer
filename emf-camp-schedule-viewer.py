@@ -61,11 +61,6 @@ previouskey = datetime(2024, 5, 31, 10, 0)
 previousvenue = "Stage A"
 # print out a more informative schedule for you
 for key in sorted(scheduledict):
-    ttnt = (key - previouskey - duration).seconds
-    if ttnt > 1000*60:
-        print("There is a clash with the next talk")
-    else:
-        print(f"Time to next talk: {ttnt/60:.0f}m")
     if scheduledict[key]["venue"] != previousvenue:
         print("You need to walk to",scheduledict[key]["venue"])
     else:
