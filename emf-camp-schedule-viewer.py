@@ -2,11 +2,18 @@ from json import loads
 from datetime import datetime
 from requests import get
 
-# paste in your personal URL
-your_url_here = "https://www.emfcamp.org/favourites.json?token=248-yet_PvW9g2ezfSNgcePG"
-emftalks = loads(get(your_url_here).text)
 
-# or if you've downloaded your file, point to it here
+# paste in your personal URL or read it from a token file
+try:
+    with open("token", "r") as tokenfile:
+        token = tokenfile.read()
+except:
+    print("You need to have your token in a file called 'token' or hardcode it into the script")
+    exit
+
+emftalks = loads(get("https://www.emfcamp.org/favourites.json?token="+token).text)
+
+# or if you've downloaded your file, point to it here and comment out the lines above
 #emftalks = json.loads(open("emftalks.json", 'r').read())
 
 # this function converts the venue names into mermaid tags to give a bit of colour to the chart
@@ -37,6 +44,7 @@ for index in range(len(emftalks)):
 
 
 with open("readme.md", "w") as fname:
+    fname.write("# EMF Camp Schedule Viewer\nOnce you have got your link to your favourite talks/workshops from [EMF 2024 Line-up](https://www.emfcamp.org/schedule/2024), clone/fork this repo, modify the code, and run it to generate your personal gantt chart. Github uses [Mermaid.js](http://mermaid.js.org/syntax/gantt.html) to render the code block, so you can visualise the output by committing the repo back to github.\n\n")
     fname.write("```mermaid\ngantt\n    title Your EMF Camp Schedule\n    dateFormat YYYY-MM-DD HH:mm\n    axisFormat %a %H:%M\n") # mermaid preamble
     sections = [] # we give each day its own section
     for key in sorted(scheduledict):
