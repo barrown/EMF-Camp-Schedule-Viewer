@@ -23,8 +23,8 @@ gantt
       How volunteers built and are now operating Hydro Power generation on the Thames  :crit, 2024-06-01 10:40, 30m
       Gas boilers suck! Hack yours today, save money, save the planet!   :crit, 2024-06-01 11:20, 30m
       The problem with medical influencers  :crit, 2024-06-01 12:50, 30m
-      Mathematical Origami  :done, 2024-06-01 13:30, 30m
-      How to Save a Life  :2024-06-01 14:20, 30m
+      Hackers, Superheroes, and Super Massive Black Holes  :crit, 2024-06-01 13:30, 30m
+      How to Save a Life  :2024-06-01 14:40, 30m
       Security Theatre  :active, 2024-06-01 16:10, 30m
       A Brief History of Calendar Systems and Movable Feasts  :active, 2024-06-01 16:50, 30m
       I Hacked Into My Own Car and other stories  :crit, 2024-06-01 17:50, 30m
@@ -33,11 +33,13 @@ gantt
       An Evening of Unnecessary Detail  :crit, 2024-06-01 19:30, 60m
       Funki Porcini - The Laserium  :done, 2024-06-01 23:00, 60m
     section Sunday
-      Unlimited Power  :crit, 2024-06-02 10:40, 30m
+      Lessons learned Open Sourcing the UK's Covid Tracing App  :crit, 2024-06-02 10:00, 30m
+      I FOI'd every NHS board in England on autism assessment provision  :active, 2024-06-02 10:40, 20m
       Making sense of London Underground's timetables and real-time data  :active, 2024-06-02 11:10, 30m
       An engineer’s guide to parenthood  :2024-06-02 12:20, 30m
       Hack The Plan  :active, 2024-06-02 14:00, 30m
       Steaming into Sustainability  :2024-06-02 14:50, 30m
-      Thomas the Privatised Tank Engine 30 years on  :crit, 2024-06-02 16:40, 30m
+      Unlimited Power  :2024-06-02 16:10, 30m
+      Thomas the Privatised Tank Engine 30 years on  :crit, 2024-06-02 16:30, 30m
       Infrastructure Review  :crit, 2024-06-02 18:00, 40m
 ```
